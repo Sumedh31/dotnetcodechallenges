@@ -8,7 +8,7 @@ namespace DotNetProblems.DataStructures
 {
     class LRUUsingLinkedList
     {
-        static void Main()
+        public static void Init()
         {
             LRUCache cache = new LRUCache(2);
             cache.put(1);
