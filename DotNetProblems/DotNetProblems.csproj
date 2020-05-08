@@ -62,6 +62,7 @@
     <Compile Include="SmallProblems\swapCase.cs" />
     <Compile Include="Sorting\MergeSort.cs" />
     <Compile Include="Trees\bfsForTree.cs" />
+    <Compile Include="Trees\BinaryTreeIterativeTraversal.cs" />
     <Compile Include="Trees\sameLevelTreeTraversal.cs" />
   </ItemGroup>
   <ItemGroup>
