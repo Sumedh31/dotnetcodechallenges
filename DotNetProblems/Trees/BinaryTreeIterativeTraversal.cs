@@ -9,13 +9,13 @@ namespace DotNetProblems.Trees
     class Node
     {
         public int data;
-        public Node left;
         public Node right;
+        public Node left;
         public Node(int data)
         {
             this.data = data;
-            this.left = null;
             this.right = null;
+            this.left = null;
         }
     }
     class BinaryTreeIterativeTraversal
@@ -30,14 +30,16 @@ namespace DotNetProblems.Trees
             tree.root.left.left = new Node(4);
             tree.root.left.right = new Node(5);
             IterativeInorder(tree.root);
-            
+            IterativePostorder(tree.root);
+            IterativePreorder(tree.root);
+
+
         }
         private static void IterativeInorder(Node root)
         {
             Stack<Node> maintainer = new Stack<Node>();
             Node current = root;
-            int[] arr1 = { };
-          
+                      
             while(true)
             {
                 if(current!=null)
@@ -61,6 +63,47 @@ namespace DotNetProblems.Trees
                 }
                         
             }
+        }
+        public static void IterativePostorder(Node root)
+        {
+            Stack<Node> stack1 = new Stack<Node>();
+            Stack<Node> stack2 = new Stack<Node>();
+
+            if (root == null)
+                return;
+            stack1.Push(root);
+            while(stack1.Count>0)
+            {
+                var current = stack1.Pop();
+                stack2.Push(current);
+                if (current.left != null)
+                    stack1.Push(current.left);
+                if (current.right != null)
+                    stack1.Push(current.right);
+            }
+            while(stack2.Count>0)
+            {
+                var node = stack2.Pop();
+                Console.Write(node.data+" ");
+            }
+            Console.Read();
+        }
+        public static void IterativePreorder(Node root)
+        {
+            Stack<Node> nodestack = new Stack<Node>();
+            if (root == null)
+                return;
+            nodestack.Push(root);
+            while(nodestack.Count>0)
+            {
+                var current = nodestack.Pop();
+                Console.WriteLine(current.data);
+                if (current.right != null)
+                    nodestack.Push(current.right);
+                if(current.left != null)
+                    nodestack.Push(current.left);
+            }
+            Console.Read();
         }
     }
 }
