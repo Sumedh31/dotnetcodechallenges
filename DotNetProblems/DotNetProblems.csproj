@@ -43,16 +43,19 @@
   <ItemGroup>
     <Compile Include="Arrays\SpiralArrayTraversal.cs" />
     <Compile Include="Base.cs" />
-    <Compile Include="Codelity\CountPairsInArray.cs" />
-    <Compile Include="Codelity\DecimalZip.cs" />
+    <Compile Include="Leetcode\CountPairsInArray.cs" />
+    <Compile Include="Leetcode\DecimalZip.cs" />
     <Compile Include="DataStructures\LRUUsingLinkedList.cs" />
     <Compile Include="Dictionaries\LRUUsingDict.cs" />
+    <Compile Include="Leetcode\LongestSubstringWithNonRepetitiveChars.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SearchStrings\PatternSearchingNaive.cs" />
     <Compile Include="SearchStrings\SearchForAllPermutations.cs" />
     <Compile Include="SearchStrings\SpecificPatternInDict.cs" />
+    <Compile Include="SmallProblems\Anagram.cs" />
     <Compile Include="SmallProblems\fibonacci.cs" />
+    <Compile Include="SmallProblems\GetSubstrings.cs" />
     <Compile Include="SmallProblems\maxUsingStack.cs" />
     <Compile Include="SmallProblems\Pyramid.cs" />
     <Compile Include="SmallProblems\RandomMusic.cs" />
