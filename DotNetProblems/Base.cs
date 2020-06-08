@@ -16,7 +16,7 @@ namespace DotNetProblems
     {
         static void Main()
         {
-            LongestSubstringWithNonRepetitiveChars.Init();
+            AddTwoNumbersUsingLinkiedList.Init();
         }
     }
 }
