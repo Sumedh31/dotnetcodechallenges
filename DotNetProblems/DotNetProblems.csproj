@@ -59,6 +59,7 @@
     <Compile Include="SearchStrings\SpecificPatternInDict.cs" />
     <Compile Include="SmallProblems\Anagram.cs" />
     <Compile Include="SmallProblems\fibonacci.cs" />
+    <Compile Include="SmallProblems\GetAllPermutations.cs" />
     <Compile Include="SmallProblems\GetSubstrings.cs" />
     <Compile Include="SmallProblems\maxUsingStack.cs" />
     <Compile Include="SmallProblems\Pyramid.cs" />

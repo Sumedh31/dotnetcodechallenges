@@ -1,6 +1,7 @@
 ﻿using DotNetProblems.Codelity;
 using DotNetProblems.DataStructures;
 using DotNetProblems.Leetcode;
+using DotNetProblems.SmallProblems;
 using DotNetProblems.Trees;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,7 @@ namespace DotNetProblems
     {
         static void Main()
         {
-            AddTwoNumbersUsingLinkiedList.Init();
+            GetAllPermutations.Init();
         }
     }
 }
